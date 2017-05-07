@@ -19,3 +19,15 @@
 [submodule "pathogen"]
 	path = pathogen
 	url = https://github.com/tpope/vim-pathogen
+[submodule "bundle/nord"]
+	path = bundle/nord
+	url = https://github.com/arcticicestudio/nord-vim
+[submodule "bundle/easymotion"]
+	path = bundle/easymotion
+	url = https://github.com/easymotion/vim-easymotion.git
+[submodule "bundle/l9"]
+	path = bundle/l9
+	url = https://github.com/vim-scripts/L9.git
+[submodule "bundle/deoplete"]
+	path = bundle/deoplete
+	url = https://github.com/Shougo/deoplete.nvim
