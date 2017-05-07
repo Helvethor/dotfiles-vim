@@ -96,6 +96,11 @@ let g:lightline = {'colorscheme' : 'nord'}
 "endfunction
 
 
+" YouCompleteMe
+
+let g:ycm_python_binary_path = 'python'
+
+
 " Omnifunc
 
 au FileType php setl ofu=phpcomplete#CompletePHP
@@ -107,20 +112,20 @@ au FileType css setl ofu=csscomplete#CompleteCSS
 
 " AutoComplPop 
 
-let g:acp_behaviorJavaEclimLength = 2
-
-function MeetsForJavaEclim(context)
-	return g:acp_behaviorJavaEclimLength >= 0 &&
-        \ a:context =~ '\k\.\k\{' . g:acp_behaviorJavaEclimLength . ',}$'
-endfunction
-
-let g:acp_behavior = {
-    \ 'java': [{
-      \ 'command': "\<c-x>\<c-u>",
-      \ 'completefunc' : 'eclim#java#complete#CodeComplete',
-      \ 'meets'        : 'MeetsForJavaEclim',
-    \ }]
-  \ }
+" "let g:acp_behaviorJavaEclimLength = 2
+" "
+" "function MeetsForJavaEclim(context)
+" "	return g:acp_behaviorJavaEclimLength >= 0 &&
+" "        \ a:context =~ '\k\.\k\{' . g:acp_behaviorJavaEclimLength . ',}$'
+" "endfunction
+" "
+" "let g:acp_behavior = {
+" "    \ 'java': [{
+" "      \ 'command': "\<c-x>\<c-u>",
+" "      \ 'completefunc' : 'eclim#java#complete#CodeComplete',
+" "      \ 'meets'        : 'MeetsForJavaEclim',
+" "    \ }]
+" "  \ }
 
 
 " JavaComplete
@@ -147,17 +152,16 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
+syntax enable
 
 " Theme
 
-syntax enable
-
 " set term=xterm
-set t_Co=16
+" set t_Co=16
 
-"if has('nvim')
-"	let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-"endif
+if has('nvim')
+	let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+endif
 
 "let g:hybrid_custom_term_colors = 1
 "let g:hybrid_reduced_contrast = 1
@@ -173,7 +177,7 @@ colorscheme nord
 " colorscheme gruvbox
 
 "highlight Normal ctermbg=235 ctermfg=223
-highlight LineNr ctermfg=15
+" highlight LineNr ctermfg=15
 
 set background=dark
 
