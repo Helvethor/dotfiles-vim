@@ -32,7 +32,7 @@ set guioptions-=r
 set guioptions-=L
 
 
-" Pathogen, plugin manager
+" Pathogen
 
 call pathogen#infect()
 call pathogen#helptags()
