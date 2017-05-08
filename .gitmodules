@@ -7,9 +7,6 @@
 [submodule "bundle/fugitive"]
 	path = bundle/fugitive
 	url = https://github.com/tpope/vim-fugitive
-[submodule "bundle/indent-guides"]
-	path = bundle/indent-guides
-	url = https://github.com/nathanaelkane/vim-indent-guides
 [submodule "bundle/multiple-cursors"]
 	path = bundle/multiple-cursors
 	url = https://github.com/terryma/vim-multiple-cursors.git
