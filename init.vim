@@ -116,6 +116,7 @@ let g:lightline = {'colorscheme' : 'nord'}
 " -----------------------------------------------------------------------------
 
 let g:ycm_python_binary_path = 'python'
+let g:ycm_autoclose_preview_window_after_insertion = 1
 
 
 " -----------------------------------------------------------------------------
