@@ -13,8 +13,6 @@ set encoding=utf-8
 set nocompatible
 set number
 set autowrite
-set tabstop=4
-set shiftwidth=4
 set backspace=indent,eol,start
 set mouse=a
 set hlsearch
@@ -25,6 +23,13 @@ set noshowmode
 set listchars=eol:¬,tab:>·,trail:·,extends:>,precedes:<,space:·
 set list
 
+set modeline
+set modelines=5
+
+set tabstop=4
+set softtabstop=4
+set shiftwidth=4
+set noexpandtab
 
 " -----------------------------------------------------------------------------
 " GVim settings 
