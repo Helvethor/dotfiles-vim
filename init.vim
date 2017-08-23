@@ -19,6 +19,7 @@ set hlsearch
 set autoindent
 set laststatus=2
 set noshowmode
+set clipboard=unnamedplus
 
 set listchars=eol:¬,tab:>·,trail:·,extends:>,precedes:<,space:·
 set list
@@ -94,7 +95,7 @@ nmap <Leader>l <Plug>(easymotion-lineforward)
 nmap <Leader>h <Plug>(easymotion-linebackward)
 
 " s for two chars jump
-nmap <Leader>s <plug>(easymotion-s2)
+nmap <Leader>d <plug>(easymotion-s2)
 
 " f for one char jump
 nmap <Leader>f <Plug>(easymotion-overwin-f)
