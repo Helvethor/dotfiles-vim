@@ -29,3 +29,6 @@
 [submodule "bundle/you-complete-me"]
 	path = bundle/you-complete-me
 	url = https://github.com/Valloric/YouCompleteMe
+[submodule "bundle/twig"]
+	path = bundle/twig
+	url = https://github.com/lunaru/vim-twig
