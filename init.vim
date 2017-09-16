@@ -20,7 +20,9 @@ set autoindent
 set laststatus=2
 set noshowmode
 set clipboard=unnamedplus
+
 set directory=$HOME/.vim/swap//
+set directory=$HOME/.vim/backups//
 
 set listchars=eol:¬,tab:>·,trail:·,extends:>,precedes:<,space:·
 set list
