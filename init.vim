@@ -113,6 +113,9 @@ nnoremap <C-H> <C-W><C-H>
 vmap <C-C> "+y
 nmap <C-V> "+p
 
+" Tab switching
+nmap <TAB> gt
+nmap <S-TAB> gT
 
 " -----------------------------------------------------------------------------
 " Lightline
