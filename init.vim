@@ -20,9 +20,11 @@ set autoindent
 set laststatus=2
 set noshowmode
 set clipboard=unnamedplus
+set udf
 
-set directory=$HOME/.vim/swap//
-set directory=$HOME/.vim/backups//
+set directory=$HOME/.vim/run/swap//
+set backupdir=$HOME/.vim/run/backups//
+set udir=$HOME/.vim/run/undo//
 
 set listchars=eol:¬,tab:>·,trail:·,extends:>,precedes:<,space:·
 set list
@@ -116,6 +118,9 @@ nmap <C-V> "+p
 " Tab switching
 nmap <TAB> gt
 nmap <S-TAB> gT
+
+nmap <Leader>7 i//<ESC>
+nmap <Leader>3 i#<ESC>
 
 " -----------------------------------------------------------------------------
 " Lightline
