@@ -1,5 +1,3 @@
-
-
 " -----------------------------------------------------------------------------
 " Vim settings
 " -----------------------------------------------------------------------------
@@ -111,21 +109,23 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+" Tab switching
+nnoremap <S-H> gT
+nnoremap <S-L> gt
+
 " Copy/Paste - X11
 vmap <C-C> "+y
 nmap <C-V> "+p
 
-" Tab switching
-nmap <TAB> gt
-nmap <S-TAB> gT
-
-nmap <Leader>7 i//<ESC>
-nmap <Leader>3 i#<ESC>
+" Commenting
+nmap <Leader>7 mZ'Zi//<ESC>`Z:delmarks Z<ENTER>2l
+nmap <Leader>/ mZ'Zxx`Z:delmarks Z<ENTER>2h
+nmap <Leader>3 mZ'Zi#<ESC>`Z:delmarks Z<ENTER>l
+nmap <Leader>* mZ'Zx`Z:delmarks Z<ENTER>h
 
 " -----------------------------------------------------------------------------
 " Lightline
-" -----------------------------------------------------------------------------
-
+" ----------------------------------------------------------------------------- 
 let g:lightline = {'colorscheme' : 'nord'}
 
 
