@@ -1,5 +1,3 @@
-
-
 " -----------------------------------------------------------------------------
 " Vim settings
 " -----------------------------------------------------------------------------
@@ -20,9 +18,11 @@ set autoindent
 set laststatus=2
 set noshowmode
 set clipboard=unnamedplus
+set udf
 
-set directory=$HOME/.vim/swap//
-set directory=$HOME/.vim/backups//
+set directory=$HOME/.vim/run/swap//
+set backupdir=$HOME/.vim/run/backups//
+set udir=$HOME/.vim/run/undo//
 
 set listchars=eol:¬,tab:>·,trail:·,extends:>,precedes:<,space:·
 set list
@@ -110,15 +110,23 @@ nnoremap <C-K> <C-W><C-K>
 nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
+" Tab switching
+nnoremap <S-H> gT
+nnoremap <S-L> gt
+
 " Copy/Paste - X11
 vmap <C-C> "+y
 nmap <C-V> "+p
 
+" Commenting
+nmap <Leader>7 mZ'Zi//<ESC>`Z:delmarks Z<ENTER>2l
+nmap <Leader>/ mZ'Zxx`Z:delmarks Z<ENTER>2h
+nmap <Leader>3 mZ'Zi#<ESC>`Z:delmarks Z<ENTER>l
+nmap <Leader>* mZ'Zx`Z:delmarks Z<ENTER>h
 
 " -----------------------------------------------------------------------------
 " Lightline
-" -----------------------------------------------------------------------------
-
+" ----------------------------------------------------------------------------- 
 let g:lightline = {'colorscheme' : 'nord'}
 
 
