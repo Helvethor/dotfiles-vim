@@ -32,3 +32,6 @@
 [submodule "bundle/twig"]
 	path = bundle/twig
 	url = https://github.com/lunaru/vim-twig
+[submodule "bundle/arm-syntax"]
+	path = bundle/arm-syntax
+	url = https://github.com/ARM9/arm-syntax-vim
