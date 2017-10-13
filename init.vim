@@ -70,6 +70,7 @@ let g:syntastic_check_on_wq = 0
 syntax enable
 
 au BufNewFile,BufRead *.s,*.S set filetype=arm " arm = armv6/7
+au BufNewFile,BufRead *.jr set filetype=java
 
 " -----------------------------------------------------------------------------
 " NERDTree 
