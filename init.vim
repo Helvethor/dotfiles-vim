@@ -65,12 +65,15 @@ set statusline+=%*
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+let g:syntastic_check_on_wq = 1
 
 syntax enable
 
 au BufNewFile,BufRead *.s,*.S set filetype=arm " arm = armv6/7
 au BufNewFile,BufRead *.jr set filetype=java
+au BufNewFile,BufRead *.rs set filetype=rust
+
+let g:syntastic_rust_checkers = ['cargo']
 
 " -----------------------------------------------------------------------------
 " NERDTree 
@@ -92,6 +95,9 @@ let g:EasyMotion_smartcase = 1
 " -----------------------------------------------------------------------------
 " Keybindings
 " -----------------------------------------------------------------------------
+
+" goto definition
+nnoremap <Leader>g :YcmCompleter GoTo<CR>
 
 " j/k to move up/down
 nmap <Leader>j <Plug>(easymotion-j)
@@ -130,6 +136,10 @@ nmap <Leader>* mZ'Zx`Z:delmarks Z<ENTER>h
 " ----------------------------------------------------------------------------- 
 let g:lightline = {'colorscheme' : 'nord'}
 
+" -----------------------------------------------------------------------------
+" Rust
+" ----------------------------------------------------------------------------- 
+let g:rustfmt_autosave = 1
 
 " -----------------------------------------------------------------------------
 " YouCompleteMe
@@ -137,6 +147,7 @@ let g:lightline = {'colorscheme' : 'nord'}
 
 let g:ycm_python_binary_path = 'python'
 let g:ycm_autoclose_preview_window_after_insertion = 1
+let g:ycm_rust_src_path = '/usr/src/rust/src'
 
 
 " -----------------------------------------------------------------------------
