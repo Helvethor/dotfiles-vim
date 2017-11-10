@@ -35,3 +35,6 @@
 [submodule "bundle/arm-syntax"]
 	path = bundle/arm-syntax
 	url = https://github.com/ARM9/arm-syntax-vim
+[submodule "bundle/rust"]
+	path = bundle/rust
+	url = https://github.com/rust-lang/rust.vim
