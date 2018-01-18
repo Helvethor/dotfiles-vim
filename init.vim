@@ -145,7 +145,7 @@ let g:rustfmt_autosave = 1
 " YouCompleteMe
 " -----------------------------------------------------------------------------
 
-let g:ycm_python_binary_path = 'python'
+let g:ycm_python_binary_path = 'python3'
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_rust_src_path = '/usr/src/rust/src'
 
