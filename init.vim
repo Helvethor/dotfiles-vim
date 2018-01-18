@@ -33,7 +33,7 @@ set modelines=5
 set tabstop=4
 set softtabstop=4
 set shiftwidth=4
-set noexpandtab
+set expandtab
 let g:python_recommended_style=0
 
 " -----------------------------------------------------------------------------
