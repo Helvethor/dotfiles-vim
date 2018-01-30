@@ -147,6 +147,7 @@ vnoremap <esc> <nop>
 " }}}
 "
 " Commenting {{{
+
 aug commenting
     au!
     au FileType javascript,rust,java,php,c nnoremap <buffer> <leader>c I//<esc>
@@ -156,6 +157,7 @@ aug END
 " }}}
 
 " Folding {{{
+
 aug folding
     au!
     au FileType vim setlocal foldmethod=marker
@@ -163,20 +165,24 @@ aug END
 " }}}
 
 " Lightline {{{
+
 let g:lightline = {'colorscheme' : 'glowtham'}
 " }}}
 
 " Rust {{{
+
 let g:rustfmt_autosave = 1
 " }}}
 
 " YouCompleteMe {{{
+
 let g:ycm_python_binary_path = 'python'
 let g:ycm_autoclose_preview_window_after_insertion = 1
 let g:ycm_rust_src_path = '/usr/src/rust/src'
 " }}}
 
 " Omnifunc {{{
+
 aug omnifunc
     au!
     au FileType php setl ofu=phpcomplete#CompletePHP
@@ -188,6 +194,7 @@ aug END
 " }}}
 
 " Theme {{{
+
 if has('nvim')
     set termguicolors
 endif
