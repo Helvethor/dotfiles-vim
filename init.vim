@@ -92,8 +92,16 @@ let g:EasyMotion_keys = "asdgklqwertzuiopyxcvbnmfj;"
 
 " Keybindings {{{
 
+nnoremap <Leader>o :ls<CR>:b 
+
 " goto definition
 nnoremap <Leader>g :YcmCompleter GoTo<CR>
+
+" reopen the file and redraw the screen
+nnoremap <Leader>e :e<CR>:redraw!<CR>
+
+" open a new terminal
+nnoremap <Leader><CR> :!popem -n 1<CR><CR>
 
 " j/k/l/h movements
 nmap <Leader>j <Plug>(easymotion-j)
