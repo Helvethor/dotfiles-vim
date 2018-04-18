@@ -14,14 +14,16 @@ set backspace=indent,eol,start
 set mouse=a
 set hlsearch
 set autoindent
+set visualbell
 set laststatus=2
+set whichwrap=b,s,h,l
 set noshowmode
 set clipboard=unnamedplus
-set udf
+set undofile
 
 set directory=$HOME/.vim/run/swap//
 set backupdir=$HOME/.vim/run/backups//
-set udir=$HOME/.vim/run/undo//
+set undodir=$HOME/.vim/run/undo//
 
 set listchars=eol:¬,tab:>·,trail:·,extends:>,precedes:<,space:·
 set list
@@ -93,6 +95,7 @@ let g:EasyMotion_keys = "asdgklqwertzuiopyxcvbnmfj;"
 " Keybindings {{{
 
 nnoremap <Leader>o :ls<CR>:b 
+nnoremap <Leader>cd :execute 'cd ' . expand("%:p:h")<CR>
 
 " goto definition
 nnoremap <Leader>g :YcmCompleter GoTo<CR>
@@ -169,6 +172,13 @@ aug END
 aug folding
     au!
     au FileType vim setlocal foldmethod=marker
+aug END
+" }}}
+
+" Linting {{{
+aug linting
+    au!
+    au FileType xml nnoremap <Leader>p :%! xmllint --format -<CR>
 aug END
 " }}}
 
