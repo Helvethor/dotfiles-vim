@@ -41,3 +41,6 @@
 [submodule "bundle/css-color"]
 	path = bundle/css-color
 	url = https://github.com/ap/vim-css-color
+[submodule "bundle/virtualenv"]
+	path = bundle/virtualenv
+	url = https://github.com/plytophogy/vim-virtualenv
