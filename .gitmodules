@@ -47,3 +47,6 @@
 [submodule "bundle/xmledit"]
 	path = bundle/xmledit
 	url = https://github.com/sukima/xmledit.git
+[submodule "bundle/tmux-navigator"]
+	path = bundle/tmux-navigator
+	url = https://github.com/christoomey/vim-tmux-navigator
