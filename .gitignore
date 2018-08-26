@@ -1,1 +1,3 @@
 run
+bundle/glowtham/autoload/lightline/colorscheme/glowtham256.vim
+bundle/glowtham/colors/glowtham256.vim
